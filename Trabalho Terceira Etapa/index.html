@@ -24,9 +24,14 @@
         color: rgb(89, 89, 143);
     }
 
-     .apresentacao{
+     p#apresentacao{
         color:  rgb(89, 89, 143);
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
     }
+    
 
      .redes {
        background-color: transparent;
@@ -62,12 +67,50 @@
     }
     
 
+       /* Tablets */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      p#apresentacao {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+
+      img#foto {
+        width: 150px;
+        height: 150px;
+      }
+
+      .social-icons img {
+        width: 45px;
+      }
+    }
+
+    /* Celulares */
     @media (max-width: 576px) {
       header h1 {
         font-size: 1.8rem;
       }
+
+      img#foto {
+        width: 130px;
+        height: 130px;
+      }
+
       .social-icons img {
         width: 40px;
+        margin: 8px;
+      }
+
+      p#apresentacao {
+        font-size: 0.95rem;
+        padding: 0 10px;
+      }
+
+      table {
+        font-size: 0.9rem;
       }
     }
 
@@ -95,8 +138,8 @@
      
     <!--essa parte eu listo sites que gosto de acessar-->
      <!--subtitulo sobre as minhas redes sociais-->
-     <section class="text-center mt-5 ">
-     <h2>sites que eu gosto de acessar</h2>
+     <section class="text-center m-5 ">
+     <h2> Minhas redes sociais </h2>
      <ul class="d-flex justify-content-center list-unstyled flex-wrap gap-3 mt-3"> 
         <li>
             <!--link para o tiktok com imagem-->
